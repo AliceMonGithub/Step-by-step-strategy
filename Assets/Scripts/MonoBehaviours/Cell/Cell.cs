@@ -69,7 +69,7 @@ namespace Scripts.CellLogic
         }
 
 
-        private void OnValidate() // УБРАТЬ ВСЕ ON VALIDATE
+        private void OnValidate()
         {
             if(_gameObject == null)
             {
