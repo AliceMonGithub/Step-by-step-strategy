@@ -3,28 +3,28 @@ using UnityEngine;
 
 namespace Scripts.GameboardLogic
 {
-    [CustomEditor(typeof(GameboardGrid))]
-    public class GameboardGridEditor : Editor
+    //[CustomEditor(typeof(GameboardGrid))]
+    public class GameboardGridEditor// : Editor
     {
-        public override void OnInspectorGUI()
-        {
-            var grid = target as GameboardGrid;
+        //public override void OnInspectorGUI()
+        //{
+        //    var grid = target as GameboardGrid;
 
-            DrawDefaultInspector();
+        //    DrawDefaultInspector();
 
-            EditorGUILayout.BeginHorizontal();
+        //    EditorGUILayout.BeginHorizontal();
 
-            if(GUILayout.Button("Create"))
-            {
-                grid.Create();
-            }
+        //    if(GUILayout.Button("Create"))
+        //    {
+        //        grid.Create();
+        //    }
 
-            if(GUILayout.Button("Clear"))
-            {
-                grid.Clear();
-            }
+        //    if(GUILayout.Button("Clear"))
+        //    {
+        //        grid.Clear();
+        //    }
 
-            EditorGUILayout.EndHorizontal();
-        }
+        //    EditorGUILayout.EndHorizontal();
+        //}
     }
 }
