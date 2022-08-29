@@ -10,8 +10,7 @@ namespace Scripts.UnitLogic
         //{
         //    var unit = target as Unit;
 
-        //    DrawDefaultInspector();
-
+        //    DrawDefaultInspector();изме
         //    if (GUILayout.Button("Initialize"))
         //    {
         //        unit.FindCell();

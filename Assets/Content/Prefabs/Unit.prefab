@@ -98,14 +98,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moves:
-  - {x: 0, y: 1}
-  - {x: 0, y: 2}
-  - {x: 1, y: 2}
-  - {x: -1, y: 2}
+  - {x: 1, y: 0}
+  - {x: 2, y: 0}
+  - {x: 2, y: -1}
+  - {x: 2, y: 1}
   _attackMoves:
+  - {x: 1, y: -1}
   - {x: 1, y: 1}
-  - {x: -1, y: 1}
-  - {x: 0, y: 1}
+  - {x: 1, y: 0}
   _cell: {fileID: 0}
   _moveColor: {r: 0, g: 1, b: 0.05740881, a: 1}
   _attackColor: {r: 1, g: 0, b: 0.06209469, a: 1}

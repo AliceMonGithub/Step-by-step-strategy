@@ -1,5 +1,6 @@
 ﻿using Scripts.CellLogic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 namespace Scripts.UnitLogic
@@ -78,6 +79,7 @@ namespace Scripts.UnitLogic
             _cell = cell;
         }
 
+        [ContextMenu("FindCell")]
         public void FindCell()
         {
             Collider2D[] colliders = Physics2D.OverlapBoxAll(_transform.position, _transform.localScale, 0);
@@ -93,6 +95,26 @@ namespace Scripts.UnitLogic
 
                 _cell = cell;
             }
+        }
+
+        [ContextMenu("Reverse moves")]
+        private void ReverseMoves()
+        {
+            for (int i = 0; i < _moves.Length; i++)
+            {
+                _moves[i].x *= -1;
+                _moves[i].y *= -1;
+            }
+
+            for (int i = 0; i < _attackMoves.Length; i++)
+            {
+                _attackMoves[i].x *= -1;
+                _attackMoves[i].y *= -1;
+            }
+
+            //EditorUtility.SetDirty(this);
+
+            //AssetDatabase.SaveAssetIfDirty(this);
         }
     }
 }
