@@ -28,7 +28,7 @@ namespace Scripts.UnitLogic
         [SerializeField] private GameObject _gameObject;
         [SerializeField] private Transform _transform;
 
-        public Vector2Int[] Moves => _moves; // РЕФАКТОРИНГ 
+        public Vector2Int[] Moves => _moves;
         public Vector2Int[] AttackMoves => _attackMoves;
 
         public GameObject GameObject => _gameObject;
